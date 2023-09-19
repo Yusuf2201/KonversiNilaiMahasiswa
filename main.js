@@ -5,14 +5,14 @@ const Y = readline.createInterface({
   output: process.stdout,
 });
 
-function getInput() {
-  return new Promise((resolve) => {
-    Y.question('Masukkan nilai mata kuliah (0-100): ', (input) => {
-      Y.close(); // Tutup readline setelah pengguna memberikan input
-      resolve(input);
-    });
-  });
-}
+// function getInput() {
+//   return new Promise((resolve) => {
+//     Y.question('Masukkan nilai mata kuliah (0-100): ', (input) => {
+//       Y.close(); // Tutup readline setelah pengguna memberikan input
+//       resolve(input);
+//     });
+//   });
+// }
 
 function processInput(input) {
   const nilai = parseInt(input);
