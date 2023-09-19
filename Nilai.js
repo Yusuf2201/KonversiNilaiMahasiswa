@@ -25,8 +25,9 @@ function inputNilaiMataKuliah() {
     nilai = parseInt(nilai);
 
     if (isNaN(nilai) || nilai < 0 || nilai > 100) {
-      console.log('Nilai tidak valid. Harap masukkan nilai antara 0 hingga 100.');
-      inputNilaiMataKuliah(); // Meminta input ulang jika nilai tidak valid
+      console.log('Nilai tidak valid');
+      Y.close();
+      // inputNilaiMataKuliah(); // Meminta input ulang jika nilai tidak valid
     } else {
       const nilaiHuruf = konvHuruf(nilai);
       console.log(`Nilainya dalam Huruf Adalah: ${nilaiHuruf}`);
